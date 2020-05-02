@@ -1,59 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Analog Clock</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Tool Tip Calculator</title>
 </head>
 <body>
-	<div class="clock">
-		<div class="num num1">
-			<div>1</div>
-		</div>
-		<div class="num num2">
-			<div>2</div>
-		</div>
-		<div class="num num3">
-			<div>3</div>
-		</div>
-		<div class="num num4">
-			<div>4</div>
-		</div>
-		<div class="num num5">
-			<div>5</div>
-		</div>
-		<div class="num num6">
-			<div>6</div>
-		</div>
-		<div class="num num7">
-			<div>7</div>
-		</div>
-		<div class="num num8">
-			<div>8</div>
-		</div>
-		<div class="num num9">
-			<div>9</div>
-		</div>
-		<div class="num num10">
-			<div>10</div>
-		</div>
-		<div class="num num11">
-			<div>11</div>
-		</div>
-		<div class="num num12">
-			<div>12</div>
-		</div>
+  <div id="container">
+    <h2>TIP CALCULATOR</h2>
+    <div id="calculator">
+      <div id="form">
+      <h3>How much was your bill?</h3>
+      <input id="billamt" placeholder="Bill Amount" type="text">
+      <h3><p>How was the service?</p>
+      <select id="servicequality">
+        <option > Choose One</option>
+        <option value="0.0">0%-Average</option>
+          <option value="0.1">10%-Good</option>
+            <option value="0.2">20%-Excellent</option>
+      </select>
+      </h3>
+      <button type="button" id="calculate">Calculate!</button>
+      </div>
+      <div id="totaltip">
+        <h3>Tip Total:-
+          <span id="tiptotal"></span>Tk
+        </h3>
+        <h3>
+          Bill Total:-
+          <span id="billtotal"></span>Tk
+        </h3>
+      </div>
+    </div>
+  </div>
 
-		<div class="hand" id="sec">
-			<div class="sec"></div>
-		</div>
-		<div class="hand" id="min">
-			<div class="min"></div>
-		</div>
-		<div class="hand" id="hour">
-			<div class="hour"></div>
-		</div>
-	</div>
-	<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
